@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/bg3.jpg);
+    background-size: cover;
+  
+}
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2
+{
+    font-size: 5em;
+    color: rgb(248, 248, 246);
+}
+.banner .content p
+{
+    font-size: 1em;
+    color: rgb(241, 241, 238);
+}
+.btn
+{
+    font-size: 1em;
+    color: rgb(15, 15, 15);
+    background: rgb(247, 117, 117);
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 6px ;
+}
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 40px 100px; 
+   z-index: 10000;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transition: 0.5s;
+}
+header.sticky{
+    background: rgb(247, 117, 117);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo
+{
+ color: rgb(247, 117, 117);
+ font-weight: 700;
+ font-size: 2em;
+ text-decoration: none;
+}
+header.sticky .logo{
+ color: #fff;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+ text-decoration: none;
+ color: rgb(252, 248, 248);
+ font-weight: 300;
+}
+header .navigation li a:hover{
+color: rgb(240, 47, 47);
+}
+section{
+    padding: 100px;
+}
+.row 
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col{
+    position: relative;
+    width: 48%;
+}
+.row .col .image{
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+.row .col .image img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+}
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box
+{
+    width: 340px;
+    margin:20px;
+    border: 15px solod #fff;
+    box-shadow: 0 5px 35px rgb(247, 117, 117);
+}
+.menu .content .box .image
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .content .box .image img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text{
+    padding: 15px 0 5px;
+}
+.menu .content .box .text h3
+{
+  font-weight: 400;
+  color: #111;
+}
+.contact
+{
+    background: url(images/bg.jpg);
+    background-size: cover;
+}
+.contactForm
+{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgb(247, 117, 117);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactForm h3{
+   color: #111;
+   font-size: 1.2em;
+   margin-bottom: 20px;
+   font-weight: 500; 
+}
